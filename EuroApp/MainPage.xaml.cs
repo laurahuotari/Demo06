@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace CarApp
+namespace EuroApp
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -25,20 +25,6 @@ namespace CarApp
         public MainPage()
         {
             this.InitializeComponent();
-        }
-
-        private void trucksbutton_Click(object sender, RoutedEventArgs e)
-        {
-            int value = int.Parse(truckstextBlock.Text); //"0" -> 0
-            value++;
-            truckstextBlock.Text = value.ToString(); // 1 -> "1"
-        }
-
-        private void carsbutton_Click(object sender, RoutedEventArgs e)
-        {
-            int value = int.Parse(carstextBlock.Text);
-            value++;
-            carstextBlock.Text = value.ToString();
         }
     }
 }
